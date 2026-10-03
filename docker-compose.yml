@@ -1,0 +1,30 @@
+
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: qdrant
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - ./qdrant_storage:/qdrant/storage
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  api:
+    build: .
+    container_name: rag_api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - /Users/devraj:/home/devraj
+      - /Users/devraj/projects/rag-production-pipeline/eval:/app/eval
+    depends_on:
+      - qdrant
+      - redis

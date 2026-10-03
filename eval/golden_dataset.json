@@ -1,0 +1,22 @@
+[
+  {
+    "question": "What are the Core Collaboration Days at Nexus Nova?",
+    "ground_truth": "The Core Collaboration Days are Tuesday and Thursday, where all staff must be physically present in the office.",
+    "context": ["The \"Core Collaboration Days\" are Tuesday and Thursday, where all staff must be physically present in the office."]
+  },
+  {
+    "question": "What equipment does a new engineer receive?",
+    "ground_truth": "Every new engineer is provided with a MacBook Pro M3 Max with 64GB RAM and a 32-inch 4K monitor.",
+    "context": ["Every new engineer is provided with a MacBook Pro M3 Max with 64GB RAM and a 32-inch 4K monitor."]
+  },
+  {
+    "question": "What is the mandatory mental health policy?",
+    "ground_truth": "There is a mandatory \"Mental Health Friday\" on the first Friday of every month, where the office closes at 1:00 PM.",
+    "context": ["There is a mandatory \"Mental Health Friday\" on the first Friday of every month, where the office closes at 1:00 PM."]
+  },
+  {
+    "question": "What are the security requirements for accessing production servers?",
+    "ground_truth": "All employees must use Hardware Security Keys (YubiKeys) for accessing the internal production servers.",
+    "context": ["All employees must use Hardware Security Keys (YubiKeys) for accessing the internal production servers."]
+  }
+]
